@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   imports: [],
   templateUrl: './info-message.component.html',
   styleUrl: './info-message.component.css',
-  // changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InfoMessageComponent {
   get debugOutput() {
@@ -15,6 +15,6 @@ export class InfoMessageComponent {
   }
 
   onLog() {
-    console.log('Clicked!');
+    console.log('InfoMessageComponent Clicked!');
   }
 }
